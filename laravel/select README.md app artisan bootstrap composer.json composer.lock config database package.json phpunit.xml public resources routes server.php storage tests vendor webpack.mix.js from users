@@ -1,0 +1,21 @@
+                                          List of databases
+        Name         |  Owner  | Encoding |  Collate   |   Ctype    |        Access privileges        
+---------------------+---------+----------+------------+------------+---------------------------------
+ default             | default | UTF8     | en_US.utf8 | en_US.utf8 | 
+ laradock_gitlab     | default | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/default                    +
+                     |         |          |            |            | default=CTc/default            +
+                     |         |          |            |            | laradock_gitlab=CTc/default
+ laradock_jupyterhub | default | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/default                    +
+                     |         |          |            |            | default=CTc/default            +
+                     |         |          |            |            | laradock_jupyterhub=CTc/default
+ larasns             | default | UTF8     | en_US.utf8 | en_US.utf8 | 
+ postgres            | default | UTF8     | en_US.utf8 | en_US.utf8 | 
+ sonar               | default | UTF8     | en_US.utf8 | en_US.utf8 | =Tc/default                    +
+                     |         |          |            |            | default=CTc/default            +
+                     |         |          |            |            | sonar=CTc/default
+ template0           | default | UTF8     | en_US.utf8 | en_US.utf8 | =c/default                     +
+                     |         |          |            |            | default=CTc/default
+ template1           | default | UTF8     | en_US.utf8 | en_US.utf8 | =c/default                     +
+                     |         |          |            |            | default=CTc/default
+(8 rows)
+
