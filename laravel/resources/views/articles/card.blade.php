@@ -18,7 +18,8 @@
                             <i class="fas fa-pen mr-1"></i>記事を更新する
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-danger" data-toggle="modal" data-target="#modal-delete-{{ $article->id }}">
+                        <a class="dropdown-item text-danger" data-toggle="modal"
+                           data-target="#modal-delete-{{ $article->id }}">
                             <i class="fas fa-trash-alt mr-1"></i>記事を削除する
                         </a>
                     </div>
@@ -74,4 +75,17 @@
             </article-like>
         </div>
     </div>
+    @foreach($article->tags as $tag)
+        @if($loop->first)
+            <div class="card-body pt-0 pb-4 pl-3">
+                <div class="card-text line-height">
+                    @endif
+                    <a href="{{ route('tags.show', ['name' => $tag->name]) }}" class="border p-1 mr-1 mt-1 text-muted">
+                        {{ $tag->hashtag }}
+                    </a>
+                    @if($loop->last)
+                </div>
+            </div>
+        @endif
+    @endforeach
 </div>
